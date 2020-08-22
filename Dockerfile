@@ -1,3 +1,3 @@
-FROM vimal13/apache-webserver-php:v1
+FROM httpd
 
-COPY . /var/www/html
+COPY . /usr/local/apache2/htdocs
