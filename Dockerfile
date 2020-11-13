@@ -1,3 +1,5 @@
-FROM vimal13/apache-webserver-php:v1
+FROM httpd
 
-COPY . /var/www/html
+RUN chmod o+rwx /usr/local/apache2/htdocs
+
+COPY . /usr/local/apache2/htdocs
